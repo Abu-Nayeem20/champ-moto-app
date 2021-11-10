@@ -1,0 +1,40 @@
+.contact-area{
+    background-image: url('https://i.ibb.co/DV9Xr9N/businessman-g5920c2788-1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(45, 58, 74, 0.945);
+    background-blend-mode: darken, luminosity;
+    padding: 100px 0;
+}
+.contact-heading{
+    text-align: center;
+    padding: 10px 0 50px;
+    color: #fff;
+}
+.contact-heading h2{
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.contact-heading h5{
+    font-size: 34px;
+    letter-spacing: 5px;
+    color: gold;
+}
+.contact-area input,
+.contact-area textarea{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+    .contact-heading h2{
+        font-size: 34px;
+    }
+    .contact-heading h5{
+        font-size: 24px;
+    }
+}

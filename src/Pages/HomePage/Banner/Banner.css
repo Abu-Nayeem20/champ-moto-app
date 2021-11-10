@@ -1,0 +1,44 @@
+.banner-content{
+    background-color: #082032;
+    padding: 50px 0 100px;
+}
+.slider-text{
+    text-align: center;
+    padding-top: 30%;
+}
+.slider-text h2{
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: aliceblue;
+    margin-bottom: 40px;
+}
+.slider-text h2 span{
+   color: gold;
+}
+
+        /* Bootstrap */
+
+.carousel-indicators [data-bs-target] {
+    display: none;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .slider-text h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-text h2{
+        font-size: 16px;
+    }
+    .slider-text button{
+        font-size: 12px;
+    }
+}

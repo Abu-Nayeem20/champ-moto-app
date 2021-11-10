@@ -1,0 +1,39 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-section{
+    background-color: #082032;
+}
+.logo-area{
+    width: 200px;
+}
+.menu-items a{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
+    transition: .5s;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #a7e0f8;
+}
+
+.navbar-light .navbar-toggler {
+    color: gold;
+    border-color: gold;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .logo-area{
+        width: 150px;
+    }
+    .menu-items a{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,72 @@
+.footer-area{
+    background-color: #082032;
+    margin-top: 120px;
+    padding: 80px 0 0;
+}
+.bottom-logo{
+    width: 200px;
+}
+.colored-name{
+    color: gold;
+    font-weight: 700;
+}
+.title-text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.contact-item, .quick-link{
+    color: #fff;
+    font-size: 18px;
+}
+.quick-link a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .5s;
+}
+.quick-link a:hover{
+    color: gold;
+    border-bottom: 1px solid gold;
+}
+.follow-us{
+    margin-bottom: 30px;
+}
+.follow-us i{
+    color: gold;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.copyright-text{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+.copyright-text p{
+    color: #ddd;
+    font-size: 18px;
+}
+.copyright-text p span{
+    color: gold;
+    font-size: 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+    .follow-us h4{
+        font-size: 30px;
+    }
+    .follow-us i{
+        font-size: 25px;
+    }
+    .copyright-text p{
+        font-size: 14px;
+    }
+    .copyright-text p span{
+        font-size: 14px;
+    }
+}
