@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const FeaturedProduct = ({product}) => {
-    const {name, img, price, desc} = product;
+const SingleProduct = ({product}) => {
+    const {_id, name, img, price, desc} = product;
     const shortDesc = desc.slice(0, 173);
     return (
         <Col>
@@ -19,10 +20,12 @@ const FeaturedProduct = ({product}) => {
             {shortDesc}...
           </Card.Text>
         </Card.Body>
-        <button className='btn btn-warning text-light fw-bold'>Buy Now</button>
+        <Link to={`/purchase/${_id}`}>
+        <button className='btn btn-warning fw-bold m-3'>PURCHASE</button>
+        </Link>
       </Card>
     </Col>
     );
 };
 
-export default FeaturedProduct;
+export default SingleProduct;

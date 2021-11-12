@@ -1,0 +1,60 @@
+.login-content{
+    background-image: url('https://i.ibb.co/VMwYY1Z/trees-g8f2bd3b4e-1920.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.651);
+    background-blend-mode: darken, luminosity;
+    padding: 100px 0;
+}
+.form-area{
+    background-color: #08203280;
+    padding: 60px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.login-top-text h2{
+    color: gold;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.or-text{
+    color: gold;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd;
+    margin-top: 40px;
+    padding: 5px;
+}
+.google-signin-btn{
+    text-align: center;
+    margin: 40px 0;
+}
+.google-signin-btn button{
+    border: 2px solid gold;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: gold;
+    color: #000;
+}
+.new-user h2{
+    color: #fff;
+    padding: 5px 0 20px;
+}
+
+
+/* Respnsive */
+
+@media (max-width: 768px) {
+    .google-signin-btn button{
+        font-size: 18px;
+    }
+    .new-user h2{
+        font-size: 18px;
+    }
+    .login-top-text h2{
+        font-size: 20px;
+    }
+}

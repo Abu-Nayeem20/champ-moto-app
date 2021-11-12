@@ -39,6 +39,34 @@ const Banner = () => {
                     alt="First slide"
                     />
                 </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block img-fluid"
+                    src="https://i.ibb.co/h7cY49f/slider-Bike-7.png"
+                    alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block img-fluid"
+                    src="https://i.ibb.co/Gv9mtWy/slider-Bike-6.png"
+                    alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block img-fluid"
+                    src="https://i.ibb.co/ggfh76f/slider-Bike-5.png"
+                    alt="First slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block img-fluid"
+                    src="https://i.ibb.co/RzsZhD6/slider-Bike-4.png"
+                    alt="First slide"
+                    />
+                </Carousel.Item>
                 </Carousel>
                     </div>
                 </div>

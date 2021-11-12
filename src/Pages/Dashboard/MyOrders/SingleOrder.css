@@ -1,0 +1,17 @@
+.productImage{
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.order-summary h4{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+.order-summary p{
+    font-size: 18px;
+}
+.order-summary .status{
+    color: blue;
+}

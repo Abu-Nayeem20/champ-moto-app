@@ -1,0 +1,35 @@
+.page-top-text{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #082032;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.page-top-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: gold;
+}
+.page-top-text h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: gold;
+}
+.all-products{
+    padding: 50px 0 80px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .page-top-text{
+        padding: 30px 0;
+    }
+    .page-top-text h2{
+        font-size: 25px;
+    }
+    .page-top-text h3{
+        font-size: 20px;
+}
+}

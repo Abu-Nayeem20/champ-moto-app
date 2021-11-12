@@ -16,7 +16,7 @@ const Reviews = () => {
     const [slides, setSlides] = useState([]);
 
     useEffect( () => {
-        fetch('./reviewsData.json')
+        fetch('http://localhost:5000/reviews')
         .then(res => res.json())
         .then(data => {
             // console.log(data)
@@ -57,7 +57,9 @@ const Reviews = () => {
           }} className="mySwiper">
             
             {
-                slides.map(slide => <SwiperSlide>
+                slides.map(slide => <SwiperSlide
+                key={slide._id}
+                >
                     <div className='single-review'>
                         <img src={slide.img} alt="" />
                         <h4>{slide.name}</h4>

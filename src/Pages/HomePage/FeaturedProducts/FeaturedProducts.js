@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
-import FeaturedProduct from './FeaturedProduct';
+import SingleProduct from './SingleProduct';
 import './FeaturedProducts.css';
 
 const FeaturedProducts = () => {
     const [featuredProducts, setFeaturedProducts] = useState([]);
 
     useEffect( () => {
-        fetch('./productsData.json')
+        fetch('http://localhost:5000/products')
         .then(res => res.json())
         .then(data => {
             setFeaturedProducts(data);
         })
     }, []);
+
+    const slicedFeatureProducts = featuredProducts.slice(0, 6);
 
     return (
         <div className='container' id='topProducts'>
@@ -23,9 +25,10 @@ const FeaturedProducts = () => {
             <div>
             <Row xs={1} md={2} className="g-4">
                 {
-                    featuredProducts.map(product => <FeaturedProduct
+                    slicedFeatureProducts.map(product => <SingleProduct
+                    key={product._id}
                     product={product}
-                    ></FeaturedProduct>)
+                    ></SingleProduct>)
                 }
             </Row>
             </div>

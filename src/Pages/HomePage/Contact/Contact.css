@@ -6,6 +6,7 @@
     background-color: rgba(45, 58, 74, 0.945);
     background-blend-mode: darken, luminosity;
     padding: 100px 0;
+    margin: 150px 0;
 }
 .contact-heading{
     text-align: center;
