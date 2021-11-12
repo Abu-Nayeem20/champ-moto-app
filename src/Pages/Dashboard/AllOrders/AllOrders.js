@@ -9,7 +9,7 @@ const AllOrders = () => {
     const handleCancelOrder = id => {
         const proceed = window.confirm("Want to Cancel Order?");
         if(proceed){
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://secret-mountain-73898.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: "DELETE"
         })
@@ -25,7 +25,7 @@ const AllOrders = () => {
     };
 
     useEffect( () => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://secret-mountain-73898.herokuapp.com/allOrders')
         .then(res => res.json())
         .then(data => {
             setOrders(data);

@@ -51,7 +51,7 @@ const Dashboard = () => {
                     </>
                     :
                     <>      
-                    <Nav.Link as={NavLink} to={`${url}/allOrders`} activeStyle={activeStyle}>All Orders</Nav.Link>
+                    <Nav.Link as={NavLink} to={`${url}/allOrders`} activeStyle={activeStyle}>Manage Orders</Nav.Link>
 
                     <Nav.Link as={NavLink} to={`${url}/addProduct`} activeStyle={activeStyle}>Add Product</Nav.Link>
 

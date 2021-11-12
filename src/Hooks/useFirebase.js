@@ -60,7 +60,7 @@ const useFirebase = () => {
     }, [auth]);
 
     useEffect( () => {
-        const url = `http://localhost:5000/users/${user.email}`;
+        const url = `https://secret-mountain-73898.herokuapp.com/users/${user.email}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -73,7 +73,7 @@ const useFirebase = () => {
         const user = {displayName, email};
         // console.log(user)
         
-        fetch('http://localhost:5000/users', {
+        fetch('https://secret-mountain-73898.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type' : 'application/json'

@@ -27,7 +27,7 @@ const AddReview = () => {
 
     const handleReviewSubmit = e => {
         // console.log(reviewInfo);
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://secret-mountain-73898.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 "content-type" : "application/json"

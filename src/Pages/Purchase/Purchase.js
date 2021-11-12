@@ -14,7 +14,7 @@ const Purchase = () => {
     const { user } = useAuth();
 
     useEffect( () => {
-        const url = `http://localhost:5000/products/${productId}`;
+        const url = `https://secret-mountain-73898.herokuapp.com/products/${productId}`;
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -49,7 +49,7 @@ const Purchase = () => {
 
     const handlePurchase = e => {
         // console.log(purchaseInfo);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://secret-mountain-73898.herokuapp.com/orders', {
             method: "POST",
             headers: {
                 "content-type" : "application/json"

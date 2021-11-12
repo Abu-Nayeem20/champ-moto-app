@@ -10,7 +10,7 @@ const ManageProducts = () => {
     const handleProductDelete = id => {
         const proceed = window.confirm("Want to Delete Product?");
         if(proceed){
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://secret-mountain-73898.herokuapp.com/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })
@@ -26,7 +26,7 @@ const ManageProducts = () => {
     };
 
     useEffect( () => {
-        fetch('http://localhost:5000/products')
+        fetch('https://secret-mountain-73898.herokuapp.com/products')
         .then(res => res.json())
         .then(data => {
             setProducts(data);

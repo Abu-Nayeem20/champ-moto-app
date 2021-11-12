@@ -17,7 +17,7 @@ const AddProduct = () => {
 
     const handleAddProduct = e => {
         // console.log(productInfo);
-        fetch('http://localhost:5000/products', {
+        fetch('https://secret-mountain-73898.herokuapp.com/products', {
             method: "POST",
             headers: {
                 "content-type" : "application/json"

@@ -19,7 +19,7 @@ const Order = ({order, handleCancelOrder }) => {
         // console.log(id, updatedStatus);
         const updateStatus = {status: updatedStatus};
 
-        const url = `http://localhost:5000/allOrders/${id}`;
+        const url = `https://secret-mountain-73898.herokuapp.com/allOrders/${id}`;
         fetch(url, {
             method: "PUT",
             headers: {
