@@ -34,7 +34,7 @@ const MyOrders = () => {
         .then(data => {
             setMyOrders(data);
         })
-    }, []);
+    }, [user.email]);
 
     const bgStyle = {
         background: '#36D1DC',

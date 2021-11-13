@@ -1,0 +1,43 @@
+
+.notfound-img{
+    width: 70%;
+    margin: 0 auto;
+}
+.notfound-img img{
+    width: 100%;
+}
+.home-button{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.not-found-btn{
+    background-color: coral;
+    border: 1px solid coral;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    transition: .5s;
+}
+.not-found-btn:hover{
+    background-color: transparent;
+    color: coral;
+}
+
+
+@media (max-width: 768px) {
+    .not-found-btn{
+        font-size: 20px;
+    }
+    .notfound-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .home-button{
+        position: absolute;
+        top: 45%;
+        left: 20%;
+    }
+}

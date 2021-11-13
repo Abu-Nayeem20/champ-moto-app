@@ -14,16 +14,16 @@ const useFirebase = () => {
 
     const auth = getAuth();
 
-    // ACCOUNT CREATE
+    // ACCOUNT CREATE WITH EMAIL AND PASS
 
     const  createAccountWithMail = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
-    // LOGIN 
+    // LOGIN WITH EMAIL AND PASS
     const loginWithEmailAndPassword =( email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
-    // UPDATE 
+    // UPDATE USER PROFILE
     const updateUserInfo = (name, photo) => {
         updateProfile(auth.currentUser, {displayName: name, photoURL: photo})
         .then( result => { })
@@ -32,7 +32,7 @@ const useFirebase = () => {
         })
       }
 
-    // Google signin
+    // SIGN  IN WITH GOOGLE
     const signInUsingGoogle = () => {
         setLoading(true);
         const googleProvider = new GoogleAuthProvider();
@@ -45,7 +45,7 @@ const useFirebase = () => {
     };
 
 
-    // observer 
+    // USER OBSERVER 
     useEffect( () => {
         const unSubscribed = onAuthStateChanged(auth, user => {
             if(user){
@@ -59,6 +59,7 @@ const useFirebase = () => {
         return () => unSubscribed;
     }, [auth]);
 
+    // ADMIN VERIFICATION
     useEffect( () => {
         const url = `https://secret-mountain-73898.herokuapp.com/users/${user.email}`;
         fetch(url)
@@ -68,7 +69,7 @@ const useFirebase = () => {
         })
     }, [user.email]);
 
-     // Save User To DB
+     // SAVE USER TO DATABASE
      const saveUser = (displayName, email, method) => {
         const user = {displayName, email};
         // console.log(user)
@@ -83,7 +84,7 @@ const useFirebase = () => {
         .then()
     };
 
-    // LogOut
+    // LOGOUT
     const logOut = () => {
         setLoading(true);
         signOut(auth)

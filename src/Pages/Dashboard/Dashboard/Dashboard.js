@@ -18,7 +18,6 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import MyOrders from '../MyOrders/MyOrders';
 import Payment from '../Payment/Payment';
-import './Dashboard.css'
 
 const Dashboard = () => {
 

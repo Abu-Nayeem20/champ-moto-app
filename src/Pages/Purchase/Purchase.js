@@ -20,7 +20,7 @@ const Purchase = () => {
         .then(data => {
             setPurchase(data);
         })
-    }, []);
+    }, [productId]);
 
     const initialInfo = { 
         name: user.displayName, 
